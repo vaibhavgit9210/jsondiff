@@ -283,7 +283,7 @@ async function handleDiff() {
     if (allIdentical) {
       showStatus('No differences found', 'success');
     } else {
-      showStatus(`Diff computed — ${othersWithContent.length} comparison${othersWithContent.length > 1 ? 's' : ''}`, 'success');
+      showStatus(`Diff computed: ${othersWithContent.length} comparison${othersWithContent.length > 1 ? 's' : ''}`, 'success');
     }
   } catch (err) {
     showStatus(err.message, 'error');
